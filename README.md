@@ -10,8 +10,8 @@ The FER2013 dataset is a widely used benchmark for facial expression recognition
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Lonishubh48/Facial-emotion-detection-using-CNN
-   cd facial-emotion-detection-using-CNN
+      git clone https://github.com/Lonishubh48/facial-emotion-detection-using-CNN.git
+      cd facial-emotion-detection-using-CNN
 2. Install the required packages:
 pip install -r requirements.txt
 # Usage
