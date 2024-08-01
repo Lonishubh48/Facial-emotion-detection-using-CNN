@@ -7,7 +7,7 @@ This project implements a facial emotion detection system using Convolutional Ne
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/facial-emotion-detection-using-CNN.git
+   git clone https://github.com/Lonishubh48/Facial-emotion-detection-using-CNN
    cd facial-emotion-detection-using-CNN
 2. Install the required packages:
 pip install -r requirements.txt
