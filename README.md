@@ -3,6 +3,9 @@
 ## Description
 This project implements a facial emotion detection system using Convolutional Neural Networks (CNN). The model is trained to recognize various emotions from facial expressions, providing a robust solution for applications in fields such as psychology, security, and human-computer interaction.
 
+## FER2013 Dataset
+The FER2013 dataset is a widely used benchmark for facial expression recognition. It contains 35,887 grayscale images of faces, each labeled with one of seven emotions: Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise. The images are 48x48 pixels in size and were collected from the internet, ensuring a diverse range of facial expressions and subjects. This dataset is essential for training and evaluating machine learning models in emotion recognition tasks.
+
 ## Installation
 
 1. Clone the repository:
