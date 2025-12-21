@@ -1,17 +1,37 @@
 # Facial Emotion Detection Using CNN
 
-## Description
-This project implements a facial emotion detection system using Convolutional Neural Networks (CNN). The model is trained to recognize various emotions from facial expressions, providing a robust solution for applications in fields such as psychology, security, and human-computer interaction.
+## Overview
+This project implements a **Facial Emotion Detection system** using **Convolutional Neural Networks (CNNs)**.  
+The model is trained to recognize human emotions from facial expressions and can be applied in areas such as **human–computer interaction, mental health analysis, security systems, and user behavior analysis**.
 
-## FER2013 Dataset
-The FER2013 dataset is a widely used benchmark for facial expression recognition. It contains 35,887 grayscale images of faces, each labeled with one of seven emotions: Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise. The images are 48x48 pixels in size and were collected from the internet, ensuring a diverse range of facial expressions and subjects. This dataset is essential for training and evaluating machine learning models in emotion recognition tasks.
+---
+
+## Dataset: FER2013
+The **FER2013** dataset is a widely used benchmark dataset for facial expression recognition tasks.
+
+- **Total images**: 35,887 grayscale facial images  
+- **Image size**: 48 × 48 pixels  
+- **Emotion classes (7)**:
+  - Angry
+  - Disgust
+  - Fear
+  - Happy
+  - Neutral
+  - Sad
+  - Surprise
+
+The dataset was collected from the internet and contains diverse facial expressions, making it suitable for training robust deep learning models.
+
+---
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-      git clone https://github.com/Lonishubh48/facial-emotion-detection-using-CNN.git
-      cd facial-emotion-detection-using-CNN
+### 1. Clone the repository
+```bash
+git clone https://github.com/Lonishubh48/facial-emotion-detection-using-CNN.git
+cd facial-emotion-detection-using-CNN
+```
+
 2. Install the required packages:
 pip install -r requirements.txt
 # Usage
@@ -29,35 +49,33 @@ pip install -r requirements.txt
 
 ## CNN Architecture
 
-The Convolutional Neural Network (CNN) architecture for facial emotion recognition consists of the following layers:
+The Convolutional Neural Network (CNN) used for facial emotion recognition consists of the following components:
 
-1. **Input Layer**: 
-   - Shape: (48, 48, 1) - Grayscale images.
+### Input Layer
+- **Input Shape**: (48, 48, 1)  
+- Grayscale facial images
 
-2. **Convolutional Layers**:
-   - **Conv Layer 1**: 32 filters, (3x3) kernel, ReLU activation.
-   - **Conv Layer 2**: 64 filters, (3x3) kernel, ReLU activation.
-   - **Conv Layer 3**: 128 filters, (3x3) kernel, ReLU activation.
-   - **Conv Layer 4**: 128 filters, (3x3) kernel, ReLU activation.
+### Convolutional Layers
+- **Conv Layer 1**: 32 filters, 3×3 kernel, ReLU activation  
+- **Conv Layer 2**: 64 filters, 3×3 kernel, ReLU activation  
+- **Conv Layer 3**: 128 filters, 3×3 kernel, ReLU activation  
+- **Conv Layer 4**: 128 filters, 3×3 kernel, ReLU activation  
 
-3. **Pooling Layers**:
-   - **MaxPooling Layer 1**: (2x2) pool size.
-   - **MaxPooling Layer 2**: (2x2) pool size.
-   - **MaxPooling Layer 3**: (2x2) pool size.
+### Pooling Layers
+- **MaxPooling Layers** with pool size (2×2) applied after convolution blocks
 
-4. **Dropout Layers**: 
-   - 25% dropout after certain convolutional layers to prevent overfitting.
+### Regularization
+- **Dropout Layers** with 25% dropout to reduce overfitting
 
-5. **Flatten Layer**: Converts 2D feature maps to 1D.
+### Fully Connected Layers
+- **Dense Layer 1**: 1024 units, ReLU activation  
+- **Dense Layer 2**: 512 units, ReLU activation  
 
-6. **Dense Layers**:
-   - **Dense Layer 1**: 1024 units, ReLU activation.
-   - **Dense Layer 2**: 512 units, ReLU activation.
+### Output Layer
+- **7 units** (one for each emotion class)  
+- **Softmax activation** for multi-class classification
 
-7. **Output Layer**:
-   - 7 units (one for each emotion), Softmax activation for classification.
-
-This architecture effectively captures and classifies facial expressions into distinct emotion categories.
+This architecture effectively learns spatial features and emotion-specific patterns from facial expressions.
 
 
 ## Results and Visualizations
