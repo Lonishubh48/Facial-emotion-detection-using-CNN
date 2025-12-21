@@ -65,8 +65,8 @@ The model's accuracy and loss during training are plotted for evaluation.
 Feature maps from the first convolutional layer are visualized to understand what the model is learning.
 
 ### Sample Emotion Predictions
-![Sample Predictions](images/angry.png)
-![Sample Predictions](images/happy.png)
+![Sample Predictions](angry.png)
+![Sample Predictions](happy.png)
 
 # Model Saving
 The trained model is saved as facial_emotions_detection_model.h5 for future use.
