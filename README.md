@@ -60,9 +60,14 @@ The Convolutional Neural Network (CNN) architecture for facial emotion recogniti
 This architecture effectively captures and classifies facial expressions into distinct emotion categories.
 
 
-# Visualizations
+## Results and Visualizations
 The model's accuracy and loss during training are plotted for evaluation.
 Feature maps from the first convolutional layer are visualized to understand what the model is learning.
+
+### Sample Emotion Predictions
+![Sample Predictions](images/sample_predictions.png)
+![Sample Predictions](images/sample_predictions.png)
+
 # Model Saving
 The trained model is saved as facial_emotions_detection_model.h5 for future use.
 
